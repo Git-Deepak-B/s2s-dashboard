@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="provisioning tool">
+    <meta name="author" content="S2S COMMUNICATIONS">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>S2S PROVISIONING - ADMIN PANEL</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <link href="../plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS you can use different color css from css/colors folder -->
+    <!-- We have chosen the skin-blue (blue.css) for this starter
+          page. However, you can choose any other skin from folder css / colors .
+-->
+    <link href="css/colors/green.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- Top Navigation -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+                <!-- Logo -->
+                <div class="top-left-part">
+                    <a class="logo" href="index.html">
+                        <!-- Logo icon image, you can use font-icon also -->
+                        <b><img src="../plugins/images/eliteadmin-logo.png" alt="home" /></b>
+                        <!-- Logo text image you can use text also -->
+                        <span class="hidden-xs"><img src="../plugins/images/eliteadmin-text.png" alt="home" /></span>
+                    </a>
+                </div>
+                <!-- /Logo -->
+                <!-- This is for mobile view search and menu icon -->
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>
+                </ul>
+                <!-- This is the message dropdown -->
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <!-- Start - Logout Link -->
+                    <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>
+                    <!-- End - Logout Link -->
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- End Top Navigation -->
+        <!-- Left navbar-header -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar fix-sidebar">
+                <ul class="nav" id="side-menu">
+
+                    <li class="nav-small-cap m-t-10">--- PROFILE</li>
+                     
+                    <span class="hide-menu">
+                        <div class="user-btm-box p-t-0">
+                            <div class="stats-row col-md-12 m-t-10 m-b-5 text-center">
+                                <div class="stat-item">
+                                    <b> <h4><i class="ti-id-badge"></i> AADMIN</h4></b>
+                                </div>
+                            </div>
+                            <div class="stats-row col-md-12 m-t-0 m-b-10 text-center">
+                                <div class="stat-item">
+                                    <h6>Username</h6>
+                                    <h5>Admin Admin</h5>
+                                </div>
+                            </div>
+                            <div class="stats-row col-md-12 m-t-0 m-b-10 text-center">
+                                <div class="stat-item">
+                                    <h6>E-Mail</h6>
+                                    <h5>admin@provisioning.com</h5>
+                                </div>
+                            </div>
+                            <div class="stats-row col-md-12 m-t-0 m-b-0 text-center">
+                                <div class="stat-item p-t-20">
+                                    <li><a href="#" data-toggle="modal" data-target="#exampleModal"><i data-icon="P" class="linea-icon linea-basic fa-fw"></i> Edit Profile</a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    
+                    <li class="nav-small-cap m-t-10">--- Main Menu</li>
+                    <li> <a href="admin_landing.html" class="waves-effect"><i data-icon="0" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Dashboard</span></a></li>
+                    <li> <a href="admin_create_request.html" class="waves-effect"><i data-icon="&#xe009" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Create Requests</span></a></li>
+                    <li> <a href="admin_provisions.html" class="waves-effect active"><i data-icon="R" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Provisioning Requests</span></a></li>
+                    <li> <a href="admin_customer_info.html" class="waves-effect"><i data-icon="M" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Customer Info</span></a></li>
+                    <li> <a href="admin_registration.html" class="waves-effect"><i data-icon="&#xe00d" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Register Customer</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Provisions</h4> 
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box">
+                            <table id="myTable" class="table table-hover">
+                                <thead>
+                                    <th>Request No.</th>
+                                    <th>Company Name</th>
+                                    <th>Site ID</th>
+                                    <th>Service Address</th>
+                                    <th>Circuit Purpose</th>
+                                    <th>Current Status</th>
+                                    <th>Date Created</th>
+                                    <th>Action</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Gibi Systems</td>
+                                        <td>123</td>
+                                        <td>2442 courtney oaks rd<br>charlotte,NC - 28217</td>
+                                        <td>Primary</td>
+                                        <td>Prequal Request</td>
+                                        <td>12-21-2017</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Gibi Systems</td>
+                                        <td>234</td>
+                                        <td>640 parkaire ln<br>charlotte,NC - 28217</td>
+                                        <td>Primary</td>
+                                        <td>Quote Provided</td>
+                                        <td>11-18-2017</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Gibi systems</td>
+                                        <td>4567</td>
+                                        <td>957 atlantic ave<br>chicago,IL - 60169</td>
+                                        <td>VoIP</td>
+                                        <td>Order Received</td>
+                                        <td>12-12-2017</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Gibi systems</td>
+                                        <td>122343</td>
+                                        <td>6270 courtney park rd<br>charlotte,NC - 28217</td>
+                                        <td>Other</td>
+                                        <td>Order Placed with ISP</td>
+                                        <td>18-12-2017</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Gibi systems</td>
+                                        <td>9994123</td>
+                                        <td>2080 hassel rd<br>hoffman estates,IL - 60169</td>
+                                        <td>Other</td>
+                                        <td>Circuit Installed</td>
+                                        <td>01-01-2018</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Focus point</td>
+                                        <td>234123</td>
+                                        <td>2442 courtney oaks rd<br>charlotte,NC - 28217</td>
+                                        <td>Primary</td>
+                                        <td>Prequal Request</td>
+                                        <td>12-21-2017</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Focus point</td>
+                                        <td>123123</td>
+                                        <td>640 parkaire ln<br>charlotte,NC - 28217</td>
+                                        <td>Primary</td>
+                                        <td>Quote Provided</td>
+                                        <td>11-18-2017</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Focus point</td>
+                                        <td>12323</td>
+                                        <td>957 atlantic ave<br>chicago,IL - 60169</td>
+                                        <td>Other</td>
+                                        <td>Order Received</td>
+                                        <td>12-12-2017</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Gibi systems</td>
+                                        <td>1342345</td>
+                                        <td>6270 courtney park rd<br>charlotte,NC - 28217</td>
+                                        <td>Backup</td>
+                                        <td>Order Placed with ISP</td>
+                                        <td>18-12-2017</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Gibi systems</td>
+                                        <td>44444</td>
+                                        <td>2080 hassel rd<br>hoffman estates,IL - 60169</td>
+                                        <td>Other</td>
+                                        <td>Circuit Installed</td>
+                                        <td>01-01-2018</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Gibi systems</td>
+                                        <td>1342345</td>
+                                        <td>2080 hassel rd hoffman estates,IL - 60169</td>
+                                        <td>Backup</td>
+                                        <td>Order Placed with ISP</td>
+                                        <td>18-12-2017</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Gibi systems</td>
+                                        <td>1342345</td>
+                                        <td>270 courtney park rd<br>charlotte,NC - 28217</td>
+                                        <td>Backup</td>
+                                        <td>Order Placed with ISP</td>
+                                        <td>18-12-2017</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm">Track Status</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2018 &copy; S2S COMMUNICATIONS </footer>
+        </div>
+        <!-- /#page-wrapper -->
+
+        <!-- Modal for profile edit -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel1">UPDATE PROFILE</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="admin_id" class="control-label">Username</label>
+                                <input type="text" class="form-control" id="admin_id" value="aadmin" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="first_name" class="control-label">First Name</label>
+                                <input type="text" class="form-control" id="first_name" value="admin">
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name" class="control-label">Last Name</label>
+                                <input type="text" class="form-control" id="last_name" value="admin">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="control-label">E-Mail</label>
+                                <input type="email" class="form-control" id="email" value="admin@provisioning.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="control-label">Password</label>
+                                <input type="password" class="form-control" id="password" value="****">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm_password" class="control-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm_password" value="****">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success btn-block"><i class="ti-save"></i> Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/tether.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!--Style Switcher -->
+    <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="../plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        $('#myTable').DataTable();
+    });
+    </script>
+</body>
+
+</html>
