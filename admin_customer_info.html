@@ -13,13 +13,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="description" content="provisioning tool">
     <meta name="author" content="S2S COMMUNICATIONS">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
     <title>S2S PROVISIONING - ADMIN PANEL</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <link href="plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <link href="plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
     <!-- Menu CSS -->
-    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
     <!-- Animation CSS -->
     <link href="css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -50,9 +51,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="top-left-part">
                     <a class="logo" href="index.html">
                         <!-- Logo icon image, you can use font-icon also -->
-                        <b><img src="../plugins/images/eliteadmin-logo.png" alt="home" /></b>
+                        <b><img src="plugins/images/eliteadmin-logo.png" alt="home" /></b>
                         <!-- Logo text image you can use text also -->
-                        <span class="hidden-xs"><img src="../plugins/images/eliteadmin-text.png" alt="home" /></span>
+                        <span class="hidden-xs"><img src="plugins/images/eliteadmin-text.png" alt="home" /></span>
                     </a>
                 </div>
                 <!-- /Logo -->
@@ -78,7 +79,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <ul class="nav" id="side-menu">
 
                     <li class="nav-small-cap m-t-10">--- PROFILE</li>
-                     
+
                     <span class="hide-menu">
                         <div class="user-btm-box p-t-0">
                             <div class="stats-row col-md-12 m-t-10 m-b-5 text-center">
@@ -105,12 +106,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </div>
                         </div>
                     </span>
-                    
+
                     <li class="nav-small-cap m-t-10">--- Main Menu</li>
-                    <li> <a href="admin_landing.html" class="waves-effect active"><i data-icon="0" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Dashboard</span></a></li>
+                    <li> <a href="admin_landing.html" class="waves-effect"><i data-icon="0" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Dashboard</span></a></li>
                     <li> <a href="admin_create_request.html" class="waves-effect"><i data-icon="&#xe009" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Create Requests</span></a></li>
                     <li> <a href="admin_provisions.html" class="waves-effect"><i data-icon="R" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Provisioning Requests</span></a></li>
-                    <li> <a href="admin_customer_info.html" class="waves-effect"><i data-icon="M" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Customer Info</span></a></li>
+                    <li> <a href="admin_customer_info.html" class="waves-effect active"><i data-icon="M" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Customer Info</span></a></li>
                     <li> <a href="admin_registration.html" class="waves-effect"><i data-icon="&#xe00d" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Register Customer</span></a></li>
                 </ul>
             </div>
@@ -121,139 +122,81 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Admin Dashboard</h4> 
+                        <h4 class="page-title">Customer Information</h4>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
-                        <div class="white-box">
-                            <h3 class="box-title">PREQUAL REQUEST RECEIVED</h3>
-                            <ul class="list-inline two-part">
-                                <li><i class="icon-people text-info"></i></li>
-                                <li class="text-right"><span class="counter">23</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
-                        <div class="white-box">
-                            <h3 class="box-title">QUOTE PROVIDED</h3>
-                            <ul class="list-inline two-part">
-                                <li><i class="icon-envelope-open text-purple"></i></li>
-                                <li class="text-right"><span class="counter">169</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-xs-12">
-                        <div class="white-box">
-                            <h3 class="box-title">ORDER RECEIVED</h3>
-                            <ul class="list-inline two-part">
-                                <li><i class="icon-docs text-danger"></i></li>
-                                <li class="text-right"><span class="">311</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-sm-6 col-xs-12">
-                        <div class="white-box">
-                            <h3 class="box-title">ORDER PLACED WITH ISP</h3>
-                            <ul class="list-inline two-part">
-                                <li><i class="icon-size-actual text-success"></i></li>
-                                <li class="text-right"><span class="counter">23</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 col-xs-12">
-                        <div class="white-box">
-                            <h3 class="box-title">CIRCUIT INSTALLED, DETAILS SENT TO CUSTOMER</h3>
-                            <ul class="list-inline two-part">
-                                <li><i class="icon-wrench text-warning"></i></li>
-                                <li class="text-right"><span class="counter">169</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="white-box">
-                            <h3 class="box-title">Recent Orders</h3>
-                            <div class="table-responsive">
-                                <table id="myTable" class="table table-hover">
-                                    <thead>
-                                        <th>Request No.</th>
-                                        <th>Company Name</th>
-                                        <th>Site ID</th>
-                                        <th>Service Address</th>
-                                        <th>Circuit Purpose</th>
-                                        <th>Current Status</th>
-                                        <th>Date Created</th>
-                                        <th>Action</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Gibi Systems</td>
-                                            <td>123</td>
-                                            <td>2442 courtney oaks rd<br>charlotte,NC - 28217</td>
-                                            <td>Primary</td>
-                                            <td>Prequal Request</td>
-                                            <td>12-21-2017</td>
-                                            <td>
-                                            <button class="btn btn-success btn-outline btn-sm">Track Status</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Gibi Systems</td>
-                                            <td>234</td>
-                                            <td>640 parkaire ln<br>charlotte,NC - 28217</td>
-                                            <td>Primary</td>
-                                            <td>Quote Provided</td>
-                                            <td>11-18-2017</td>
-                                            <td>
-                                            <button class="btn btn-success btn-outline btn-sm">Track Status</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Gibi systems</td>
-                                            <td>4567</td>
-                                            <td>957 atlantic ave<br>chicago,IL - 60169</td>
-                                            <td>VoIP</td>
-                                            <td>Order Received</td>
-                                            <td>12-12-2017</td>
-                                            <td>
-                                            <button class="btn btn-success btn-outline btn-sm">Track Status</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Gibi systems</td>
-                                            <td>122343</td>
-                                            <td>6270 courtney park rd<br>charlotte,NC - 28217</td>
-                                            <td>Other</td>
-                                            <td>Order Placed with ISP</td>
-                                            <td>18-12-2017</td>
-                                            <td>
-                                            <button class="btn btn-success btn-outline btn-sm">Track Status</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Gibi systems</td>
-                                            <td>9994123</td>
-                                            <td>2080 hassel rd<br>hoffman estates,IL - 60169</td>
-                                            <td>Other</td>
-                                            <td>Circuit Installed</td>
-                                            <td>01-01-2018</td>
-                                            <td>
-                                            <button class="btn btn-success btn-outline btn-sm">Track Status</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <table id="myTable" class="table table-hover">
+                                <thead>
+                                    <th>Username</th>
+                                    <th>Company Name</th>
+                                    <th>FirstName</th>
+                                    <th>LastName</th>
+                                    <th>email</th>
+                                    <th>Action</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ccustomer</td>
+                                        <td>Gibi systems</td>
+                                        <td>customer</td>
+                                        <td>customer</td>
+                                        <td>adas@asd.com</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm" data-toggle="modal" data-target="#customerModal">Edit</button>
+                                        <button class="btn btn-success btn-outline btn-sm">Reset Password</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>mramanathan</td>
+                                        <td>Gibi systems</td>
+                                        <td>maninesan</td>
+                                        <td>ramanathan</td>
+                                        <td>mramanathan@test.com</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm" data-toggle="modal" data-target="#customerModal">Edit</button>
+                                        <button class="btn btn-success btn-outline btn-sm">Reset Password</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>kravi</td>
+                                        <td>Gibi systems</td>
+                                        <td>kumaran</td>
+                                        <td>ravi</td>
+                                        <td>kravi@asd.com</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm" data-toggle="modal" data-target="#customerModal">Edit</button>
+                                        <button class="btn btn-success btn-outline btn-sm">Reset Password</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>dcustomer</td>
+                                        <td>Gibi systems</td>
+                                        <td>deepak</td>
+                                        <td>customer</td>
+                                        <td>dcustomer@test.com</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm" data-toggle="modal" data-target="#customerModal">Edit</button>
+                                        <button class="btn btn-success btn-outline btn-sm">Reset Password</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>psrinivasan</td>
+                                        <td>Gibi systems</td>
+                                        <td>prashant</td>
+                                        <td>srinivasan</td>
+                                        <td>psrinivasan@test.com</td>
+                                        <td>
+                                        <button class="btn btn-success btn-outline btn-sm" data-toggle="modal" data-target="#customerModal">Edit</button>
+                                        <button class="btn btn-success btn-outline btn-sm">Reset Password</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -306,27 +249,78 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div>
         </div>
 
+        <!-- Modal for customer edit -->
+        <div class="modal fade" id="customerModal" tabindex="-1" role="dialog" aria-labelledby="customerModalLabel1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="customerModalLabel1">EDIT CUSTOMER INFO</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="customer_id" class="control-label">Username</label>
+                                <input type="text" class="form-control" id="customer_id" value="ccustomer" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="company_name" class="control-label">Company Name</label>
+                                <input type="text" class="form-control" id="company_name" value="Gibi Systems">
+                            </div>
+                            <div class="form-group">
+                                <label for="first_name" class="control-label">First Name</label>
+                                <input type="text" class="form-control" id="first_name" value="customer">
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name" class="control-label">Last Name</label>
+                                <input type="text" class="form-control" id="last_name" value="customer">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="control-label">E-Mail</label>
+                                <input type="email" class="form-control" id="email" value="adas@asd.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="control-label">Password</label>
+                                <input type="password" class="form-control" id="password" value="****">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm_password" class="control-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm_password" value="****">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success btn-block"><i class="ti-save"></i> Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- /#wrapper -->
     <!-- jQuery -->
-    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="bootstrap/dist/js/tether.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <script src="plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
     <!-- Menu Plugin JavaScript -->
-    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
     <!--slimscroll JavaScript -->
     <script src="js/jquery.slimscroll.js"></script>
     <!--Wave Effects -->
     <script src="js/waves.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.min.js"></script>
-    <!-- Sparkline chart JavaScript -->
-    <script src="../plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
-    <script src="../plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js"></script>
     <!--Style Switcher -->
-    <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        $('#myTable').DataTable();
+    });
+    </script>
 </body>
 
 </html>

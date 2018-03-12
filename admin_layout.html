@@ -13,13 +13,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="description" content="provisioning tool">
     <meta name="author" content="S2S COMMUNICATIONS">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
     <title>S2S PROVISIONING - ADMIN PANEL</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <link href="plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
     <!-- Menu CSS -->
-    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
     <!-- Animation CSS -->
     <link href="css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -50,9 +50,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="top-left-part">
                     <a class="logo" href="index.html">
                         <!-- Logo icon image, you can use font-icon also -->
-                        <b><img src="../plugins/images/eliteadmin-logo.png" alt="home" /></b>
+                        <b><img src="plugins/images/eliteadmin-logo.png" alt="home" /></b>
                         <!-- Logo text image you can use text also -->
-                        <span class="hidden-xs"><img src="../plugins/images/eliteadmin-text.png" alt="home" /></span>
+                        <span class="hidden-xs"><img src="plugins/images/eliteadmin-text.png" alt="home" /></span>
                     </a>
                 </div>
                 <!-- /Logo -->
@@ -63,7 +63,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- This is the message dropdown -->
                 <ul class="nav navbar-top-links navbar-right pull-right">
                     <!-- Start - Logout Link -->
-                    <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>
+                    <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
                     <!-- End - Logout Link -->
                 </ul>
             </div>
@@ -78,12 +78,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <ul class="nav" id="side-menu">
 
                     <li class="nav-small-cap m-t-10">--- PROFILE</li>
-                     
+
                     <span class="hide-menu">
                         <div class="user-btm-box p-t-0">
                             <div class="stats-row col-md-12 m-t-10 m-b-5 text-center">
                                 <div class="stat-item">
-                                    <b> <h4><i class="ti-id-badge"></i> ADMIN</h4></b>
+                                    <b> <h4><i class="ti-id-badge"></i> AADMIN</h4></b>
                                 </div>
                             </div>
                             <div class="stats-row col-md-12 m-t-0 m-b-10 text-center">
@@ -100,12 +100,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </div>
                             <div class="stats-row col-md-12 m-t-0 m-b-0 text-center">
                                 <div class="stat-item p-t-20">
-                                    <li><a href="widgets.html"><i data-icon="P" class="linea-icon linea-basic fa-fw"></i> Edit Profile</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#exampleModal"><i data-icon="P" class="linea-icon linea-basic fa-fw"></i> Edit Profile</a></li>
                                 </div>
                             </div>
                         </div>
                     </span>
-                    
+
                     <li class="nav-small-cap m-t-10">--- Main Menu</li>
                     <li> <a href="widgets.html" class="waves-effect"><i data-icon="&#xe009" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Create Requests</span></a></li>
                     <li> <a href="widgets.html" class="waves-effect"><i data-icon="R" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu"> Provisioning Requests</span></a></li>
@@ -120,7 +120,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Blank Page</h4> 
+                        <h4 class="page-title">Blank Page</h4>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
@@ -136,16 +136,60 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <footer class="footer text-center"> 2018 &copy; S2S COMMUNICATIONS </footer>
         </div>
         <!-- /#page-wrapper -->
+
+        <!-- Modal for profile edit -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel1">UPDATE PROFILE</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="admin_id" class="control-label">Username</label>
+                                <input type="text" class="form-control" id="admin_id" value="aadmin" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="first_name" class="control-label">First Name</label>
+                                <input type="text" class="form-control" id="first_name" value="admin">
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name" class="control-label">Last Name</label>
+                                <input type="text" class="form-control" id="last_name" value="admin">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="control-label">E-Mail</label>
+                                <input type="email" class="form-control" id="email" value="admin@provisioning.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="control-label">Password</label>
+                                <input type="password" class="form-control" id="password" value="****">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm_password" class="control-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm_password" value="****">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success btn-block"><i class="ti-save"></i> Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- /#wrapper -->
     <!-- jQuery -->
-    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="bootstrap/dist/js/tether.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <script src="plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
     <!-- Menu Plugin JavaScript -->
-    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
     <!--slimscroll JavaScript -->
     <script src="js/jquery.slimscroll.js"></script>
     <!--Wave Effects -->
@@ -153,7 +197,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.min.js"></script>
     <!--Style Switcher -->
-    <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
 </body>
 
 </html>
